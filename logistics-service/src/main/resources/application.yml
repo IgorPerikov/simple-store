@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: logistics-service
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    eureka-server-port: 8761
