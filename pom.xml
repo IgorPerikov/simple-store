@@ -28,7 +28,6 @@
         <module>shop-service</module>
         <module>facade-service</module>
         <module>service-registry</module>
-        <module>routing-service</module>
     </modules>
 
     <dependencyManagement>

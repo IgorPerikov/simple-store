@@ -4,8 +4,6 @@ import org.clayman.store.facade.clients.LogisticsClient;
 import org.clayman.store.facade.clients.ShopClient;
 import org.clayman.store.logistics.domain.DeliveriesSchedule;
 import org.clayman.store.shop.domain.Item;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,8 +15,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/facade")
 public class FacadeController {
-
-    private static final Logger log = LoggerFactory.getLogger(FacadeController.class);
 
     @Autowired
     private ShopClient shopClient;
