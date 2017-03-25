@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: shop-service
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    eureka-server-port: 8761
