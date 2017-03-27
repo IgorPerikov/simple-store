@@ -1,6 +1,6 @@
 package org.clayman.store.facade.clients;
 
-import org.clayman.store.shop.domain.Item;
+import org.clayman.store.facade.domain.Item;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;

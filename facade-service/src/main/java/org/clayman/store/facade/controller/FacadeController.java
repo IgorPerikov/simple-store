@@ -2,8 +2,8 @@ package org.clayman.store.facade.controller;
 
 import org.clayman.store.facade.clients.LogisticsClient;
 import org.clayman.store.facade.clients.ShopClient;
-import org.clayman.store.logistics.domain.DeliveriesSchedule;
-import org.clayman.store.shop.domain.Item;
+import org.clayman.store.facade.domain.DeliveriesSchedule;
+import org.clayman.store.facade.domain.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

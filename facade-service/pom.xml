@@ -8,8 +8,8 @@
         <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>facade-service</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <jar.name>facade</jar.name>
@@ -56,17 +56,6 @@
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.clayman</groupId>
-            <artifactId>shop-service</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.clayman</groupId>
-            <artifactId>logistics-service</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
