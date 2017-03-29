@@ -1,0 +1,33 @@
+version: "2"
+services:
+  service-registry:
+    image: igorperikov/service-registry:0.3
+    ports:
+      - 8761:8761
+    restart: always
+
+  facade-service:
+    image: igorperikov/facade-service:0.3
+    ports:
+      - 8082:8082
+    restart: always
+    depends_on:
+      - shop-service
+      - logistics-service
+      - service-registry
+
+  shop-service:
+    image: igorperikov/shop-service:0.3
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - service-registry
+
+  logistics-service:
+    image: igorperikov/logistics-service:0.3
+    ports:
+      - 8081:8081
+    restart: always
+    depends_on:
+      - service-registry
